@@ -74,7 +74,6 @@ Aligned with the manuscript Methods defaults:
 - α_0 = 0.20, soft-blend β = 0.12, bit confidence c = 0.80
 - CQE interval ΔG = 8, neighborhood size K_nb = 8, one amplitude-amplification iteration per CQE event
 - Local bound M = 8 (no local 2-opt inside PDE–CQE)
-- Random seed = 8
 - ACO: 30 ants, 100 iterations, α = 1, β = 2, ρ = 0.1, Q = 100
 - GA: population 100, 500 generations, crossover 0.8, mutation 0.2
 - Greedy: nearest neighbor
