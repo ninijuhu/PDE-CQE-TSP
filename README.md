@@ -29,11 +29,10 @@ pip install numpy matplotlib pandas scikit-learn tsplib95 qiskit qiskit-aer
 | `draw1.py` | Plot TSPLIB overall performance |
 | `ablation_plot.py` | Plot PDE/CQE mechanism isolation |
 | `results/` | Primary summary result tables and selected CQE diagnostic CSV |
-| `test_9_24.py` | Main PDE–CQE solver |
-| `test_9_24_noise.py` | Aer noise simulation |
 | `aco.py` | ACO |
 | `ga.py` | GA |
 | `greedy.py` | Nearest-neighbor greedy |
+| `qaco.py` | Variant QACO |
 | `statistical_tests.py` | Mann–Whitney, Friedman, and Wilcoxon tests |
 
 ### Contents of `results/`
@@ -77,6 +76,7 @@ Aligned with the manuscript Methods defaults:
 - ACO: 30 ants, 100 iterations, α = 1, β = 2, ρ = 0.1, Q = 100
 - GA: population 100, 500 generations, crossover 0.8, mutation 0.2
 - Greedy: nearest neighbor
+- QACO: encoding m⌈log₂ m⌉, Ry pheromone, 128 shots, max_loops = 40 per subcluster
 - `statistical_tests.py`: one-sided Mann–Whitney with Holm within each instance; Friedman plus one-sided Wilcoxon with Holm on the per-instance means
 
 ## Notes
